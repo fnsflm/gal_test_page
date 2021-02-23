@@ -193,7 +193,7 @@
                 <a href="/2021/02/22/hello-world/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview1.jpg" alt="Hello World">
+                        <img src="/imgs/preview/preview4.jpg" alt="Hello World">
                     </div>
                     <div class="info">
                         
@@ -227,7 +227,7 @@
             <p style="text-align: center;">
                 <a href="/2021/02/22/hello-world/">
                     
-                    <img src="/imgs/preview/preview4.jpg" alt="Hello World">
+                    <img src="/imgs/preview/preview1.jpg" alt="Hello World">
                 </a>
             </p>
         </div>
@@ -265,6 +265,8 @@
 </div>
 
 <!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+  
+    <div id="comments-template" style="display:none"></div> 
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -490,5 +492,33 @@
 
 
 
+
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = ''
+      window.commentConfig.owner = 'fnsflm'
+      window.commentConfig.repo = 'gal_test_page'
+      window.commentConfig.client_id = '3944a1f0ecd9ba78988b'
+      window.commentConfig.client_secret = 'c63e09f78d2fbc940cf7394e3370fc7ad1cc1df1'
+      window.commentConfig.redirect_uri = ''
+      window.commentConfig.proxy = ''
+    } else {
+      window.commentConfig = {
+      	id: '',
+        owner: 'fnsflm',
+        repo: 'gal_test_page',
+        client_id: '3944a1f0ecd9ba78988b',
+        client_secret: 'c63e09f78d2fbc940cf7394e3370fc7ad1cc1df1',
+        redirect_uri: '',
+        proxy: ''
+      }
+    }
+</script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    
+<script src="/js/comment/gitalk.js"></script>
+
+  
 
 </html>

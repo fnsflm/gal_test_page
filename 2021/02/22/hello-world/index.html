@@ -209,6 +209,15 @@
 </article>
 
 
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'Hello World'
+    }
+</script>
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -433,5 +442,33 @@
 
 
 
+
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Mon Feb 22 2021 15:24:31 GMT+0800'
+      window.commentConfig.owner = 'fnsflm'
+      window.commentConfig.repo = 'gal_test_page'
+      window.commentConfig.client_id = '3944a1f0ecd9ba78988b'
+      window.commentConfig.client_secret = 'c63e09f78d2fbc940cf7394e3370fc7ad1cc1df1'
+      window.commentConfig.redirect_uri = ''
+      window.commentConfig.proxy = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Mon Feb 22 2021 15:24:31 GMT+0800',
+        owner: 'fnsflm',
+        repo: 'gal_test_page',
+        client_id: '3944a1f0ecd9ba78988b',
+        client_secret: 'c63e09f78d2fbc940cf7394e3370fc7ad1cc1df1',
+        redirect_uri: '',
+        proxy: ''
+      }
+    }
+</script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    
+<script src="/js/comment/gitalk.js"></script>
+
+  
 
 </html>
